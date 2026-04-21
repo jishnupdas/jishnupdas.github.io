@@ -17,7 +17,7 @@ A complete redesign of Jishnu P Das's personal portfolio website to reflect a tr
 
 ### 2. Active Directives (Professional Work)
 - **Design:** Grid of "Cards" with subtle gradient borders (`gradient-border` class).
-- **Projects:** 
+- **Projects:**
   - **Ovi:** The Style Architect (Next.js, Sartorial Engineering).
   - **PDF Generation Engine:** Medical AI (SQS/Lambda/S3).
   - **Nexus AI Dashboard:** AI Strategy (React, Periodic Table of AI).
