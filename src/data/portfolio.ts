@@ -3,17 +3,17 @@ export const portfolioData = {
     {
       id: "accurkardia",
       title: "Accurkardia",
-      role: "Senior Developer",
+      role: "Senior Full-Stack Developer",
       techStack: ["React", "Next.js", "Django", "AWS SQS", "AWS Lambda", "AWS S3", "Python"],
-      summary: "Developing mission-critical medical technology platforms for high-fidelity medical ECG report generation and data visualization.",
+      summary: "Developing mission-critical infrastructure at Archimydes Inc. for AccurKardia, an FDA-cleared AI-powered cardiac diagnostics platform establishing ECG as a clinical biomarker.",
       innovations: [
         {
           name: "Holter MCT PDF Generation Engine",
-          description: "Architected an asynchronous, decoupled report generation pipeline using SQS and Lambda to handle massive throughput without blocking the main application API."
+          description: "Architected an asynchronous, decoupled report generation pipeline using SQS and Lambda to handle massive throughput for high-fidelity ECG data visualizations without blocking the main API."
         },
         {
           name: "Memory & Pagination Optimization",
-          description: "Engineered rendering strategies to overcome strict memory constraints when generating reports with thousands of data points, ensuring stability under heavy load."
+          description: "Engineered rendering strategies to overcome strict memory constraints when generating medical reports containing thousands of data points, ensuring stability under heavy load."
         }
       ],
       subProjects: []
@@ -38,7 +38,7 @@ export const portfolioData = {
       ],
       subProjects: [
         {
-          title: "AItelier",
+          title: "AItelier (Legacy Prototype)",
           description: "A precursor design prototype focusing on B2B utility for stylists, which laid the visual groundwork for polymorphic UIs."
         }
       ]
@@ -47,7 +47,7 @@ export const portfolioData = {
       id: "bedtimestories",
       title: "Bedtime Stories",
       role: "Creator",
-      techStack: ["Gen-AI", "UI Design"],
+      techStack: ["Gen-AI", "UI Design", "Prompt Engineering"],
       summary: "A fun exploration of generative AI and creative UI ideas, crafting engaging bedtime stories through automated storytelling pipelines.",
       innovations: [],
       subProjects: []
@@ -74,10 +74,10 @@ export const portfolioData = {
     },
     {
       id: "agency",
-      title: "Agency",
+      title: "The Agency OS",
       role: "Collaborator",
-      techStack: ["Web Development", "Systems Design"],
-      summary: "A weekend side-project exploring digital solutions, system design patterns, and collaborative development with friends.",
+      techStack: ["AI Agents", "NotebookLM", "Meta APIs", "Taskwarrior"],
+      summary: "A weekend side-project exploring digital marketing automation, integrating AI agents and LLMs to manage client retainers, content strategy, and Meta ad deployments.",
       innovations: [],
       subProjects: []
     }
@@ -99,17 +99,17 @@ export const portfolioData = {
       description: "An open-source software pipeline intended to supplant IRAF for astronomical photometry."
     },
     {
-      title: "Agentic AI & The Second Brain",
-      tech: ["Obsidian", "RAG", "Knowledge Graphs"],
-      description: "Researching and building autonomous agent workflows and knowledge retrieval systems, mapping connections across disciplines."
+      title: "Naxxatra Sciences Mentorship",
+      tech: ["Mentorship", "Curriculum Design", "Open Source"],
+      description: "Mentoring and leading collaborative research teams on various topics covering physics, astronomy, and Python."
     }
   ],
   timeline: [
     {
-      role: "Senior Developer",
+      role: "Senior Full-Stack Developer",
       organization: "Archimydes Inc.",
       period: "2022 — Present",
-      description: "Operating at the intersection of frontend architecture and backend pipelines. Driving development for global clients using React, Next.js, and Django. Architecting critical infrastructure like the Accurkardia Holter MCT PDF Engine."
+      description: "Operating at the intersection of frontend architecture and backend pipelines. Driving development for global clients using React, Next.js, and Django. Architecting critical infrastructure like the AccurKardia Holter MCT PDF Engine."
     },
     {
       role: "Director of R&D / Lead Developer",
@@ -121,7 +121,7 @@ export const portfolioData = {
       role: "Astrophysics Researcher",
       organization: "Osmania University",
       period: "2015 — 2019",
-      description: "Analyzed galaxy morphologies and neglected contact binaries. Processed vast amounts of optical and IR signals. Transitioned from observing the cosmos to writing the software that decodes it."
+      description: "Completed MSc in Astronomy (2015-2017). Analyzed galaxy morphologies and neglected contact binaries. Processed vast amounts of optical and IR signals. Transitioned from observing the cosmos to writing the software that decodes it."
     }
   ]
 };
