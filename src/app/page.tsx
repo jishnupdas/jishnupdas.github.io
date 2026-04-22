@@ -87,13 +87,80 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 3. Design Projects */}
+        {/* 3. Gen-AI & UI Explorations */}
         <section className="flex flex-col gap-8">
-          <h3 className="text-3xl font-semibold text-zinc-100 border-b border-zinc-800 pb-3">
-            Design Projects
-          </h3>
+          <div className="flex justify-between items-baseline border-b border-zinc-800 pb-3">
+            <h3 className="text-3xl font-semibold text-zinc-100">
+              Gen-AI & UI Explorations
+            </h3>
+            <span className="text-sm text-zinc-500 italic hidden sm:inline">Side projects testing new ideas.</span>
+          </div>
           <div className="flex flex-col gap-12">
-            {portfolioData.designProjects.map(project => (
+            {portfolioData.genAiExplorations.map(project => (
+              <div key={project.id} className="gradient-border p-8 flex flex-col gap-6 group">
+                <div className="flex flex-col gap-2 border-b border-zinc-800/50 pb-4">
+                  <div className="flex justify-between items-start flex-wrap gap-4">
+                    <h4 className="text-2xl font-semibold text-zinc-200 group-hover:text-zinc-50 transition-colors">
+                      {project.title}
+                    </h4>
+                    <span className="text-xs text-zinc-400 font-[family-name:var(--font-mono)] bg-zinc-900/50 px-3 py-1.5 rounded-full border border-zinc-800">
+                      {project.role}
+                    </span>
+                  </div>
+                  <p className="text-zinc-300 text-base leading-relaxed max-w-3xl">
+                    {project.summary}
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    {project.techStack.map(tech => (
+                      <span key={tech} className="text-[10px] font-[family-name:var(--font-mono)] text-zinc-500 uppercase tracking-wider">
+                        #{tech.replace(/\s+/g, '')}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {project.innovations.length > 0 && (
+                  <div className="flex flex-col gap-4">
+                    <h5 className="text-sm font-semibold text-zinc-400 uppercase tracking-widest">Key Innovations & Discoveries</h5>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      {project.innovations.map((innovation, idx) => (
+                        <div key={idx} className="bg-zinc-900/30 p-4 rounded-lg border border-zinc-800/30">
+                          <h6 className="text-zinc-200 font-medium mb-2">{innovation.name}</h6>
+                          <p className="text-sm text-zinc-400 leading-relaxed">{innovation.description}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {project.subProjects.length > 0 && (
+                  <div className="flex flex-col gap-3 mt-2">
+                    <h5 className="text-sm font-semibold text-zinc-400 uppercase tracking-widest">Sub-Projects</h5>
+                    <div className="flex flex-col gap-4 pl-4 border-l border-zinc-800">
+                      {project.subProjects.map((sub, idx) => (
+                        <div key={idx} className="flex flex-col gap-1">
+                          <h6 className="text-zinc-300 font-medium">{sub.title}</h6>
+                          <p className="text-sm text-zinc-500">{sub.description}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* 4. Collaborative Projects */}
+        <section className="flex flex-col gap-8">
+          <div className="flex justify-between items-baseline border-b border-zinc-800 pb-3">
+            <h3 className="text-3xl font-semibold text-zinc-100">
+              Collaborative Projects
+            </h3>
+            <span className="text-sm text-zinc-500 italic hidden sm:inline">Weekend builds with friends.</span>
+          </div>
+          <div className="flex flex-col gap-12">
+            {portfolioData.collaborativeProjects.map(project => (
               <div key={project.id} className="gradient-border p-8 flex flex-col gap-6 group">
                 <div className="flex flex-col gap-2 border-b border-zinc-800/50 pb-4">
                   <div className="flex justify-between items-start flex-wrap gap-4">

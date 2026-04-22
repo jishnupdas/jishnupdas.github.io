@@ -1,9 +1,29 @@
 export const portfolioData = {
   mainWork: [
     {
+      id: "accurkardia",
+      title: "Accurkardia",
+      role: "Senior Developer",
+      techStack: ["React", "Next.js", "Django", "AWS SQS", "AWS Lambda", "AWS S3", "Python"],
+      summary: "Developing mission-critical medical technology platforms for high-fidelity medical ECG report generation and data visualization.",
+      innovations: [
+        {
+          name: "Holter MCT PDF Generation Engine",
+          description: "Architected an asynchronous, decoupled report generation pipeline using SQS and Lambda to handle massive throughput without blocking the main application API."
+        },
+        {
+          name: "Memory & Pagination Optimization",
+          description: "Engineered rendering strategies to overcome strict memory constraints when generating reports with thousands of data points, ensuring stability under heavy load."
+        }
+      ],
+      subProjects: []
+    }
+  ],
+  genAiExplorations: [
+    {
       id: "ovi",
       title: "Ovi: The Style Architect",
-      role: "Architect & Lead Engineer",
+      role: "Creator",
       techStack: ["Next.js 16", "TypeScript", "Tailwind", "Turso", "Gemini AI"],
       summary: "A 'Polymorphic' expert system for fashion that issues structural directives based on cultural contexts.",
       innovations: [
@@ -16,34 +36,30 @@ export const portfolioData = {
           description: "A structured generation pipeline using Zod schema validation to ensure strictly typed LLM outputs before converting assets to Base64 and serving via Google Cloud Storage."
         }
       ],
-      subProjects: []
+      subProjects: [
+        {
+          title: "AItelier",
+          description: "A precursor design prototype focusing on B2B utility for stylists, which laid the visual groundwork for polymorphic UIs."
+        }
+      ]
     },
     {
-      id: "accurkardia",
-      title: "Holter MCT PDF Generation Engine",
-      role: "Backend & Systems Engineer",
-      techStack: ["AWS SQS", "AWS Lambda", "AWS S3", "Node.js", "Python"],
-      summary: "Mission-critical serverless pipeline for generating high-fidelity medical ECG reports and data visualizations.",
-      innovations: [
-        {
-          name: "Asynchronous Generation Pipeline",
-          description: "Decoupled report generation using SQS and Lambda to handle massive throughput and variable load without blocking the main application API."
-        },
-        {
-          name: "Memory & Pagination Optimization",
-          description: "Engineered rendering strategies to overcome strict memory constraints when generating reports with thousands of data points, ensuring stability under heavy load."
-        }
-      ],
+      id: "bedtimestories",
+      title: "Bedtime Stories",
+      role: "Creator",
+      techStack: ["Gen-AI", "UI Design"],
+      summary: "A fun exploration of generative AI and creative UI ideas, crafting engaging bedtime stories through automated storytelling pipelines.",
+      innovations: [],
       subProjects: []
     }
   ],
-  designProjects: [
+  collaborativeProjects: [
     {
       id: "nexus-ai",
       title: "Nexus AI Dashboard",
-      role: "Frontend Engineer / Designer",
+      role: "Collaborator",
       techStack: ["React", "Vite", "Tailwind CSS", "Framer Motion", "Dagre"],
-      summary: "An AI-architecture consultation platform designed to visualize and strategize complex AI implementations.",
+      summary: "A weekend collaborative project building an AI-architecture consultation platform designed to visualize and strategize complex AI implementations.",
       innovations: [
         {
           name: "The Periodic Table of AI",
@@ -54,19 +70,14 @@ export const portfolioData = {
           description: "Integrated Dagre for automated, directed-graph layout rendering of AI strategies and agent orchestration flows."
         }
       ],
-      subProjects: [
-        {
-          title: "AItelier (Legacy Prototype)",
-          description: "A precursor design prototype focusing on B2B utility for stylists, which laid the visual groundwork for polymorphic UIs."
-        }
-      ]
+      subProjects: []
     },
     {
-      id: "visual-arts",
-      title: "Visual Arts & Photography",
-      role: "Digital Artist",
-      techStack: ["Lightroom", "Inkscape", "Blender"],
-      summary: "Digital composition, astrophotography, landscape, and vector CG. Exploring aesthetics that directly inform frontend and UI design.",
+      id: "agency",
+      title: "Agency",
+      role: "Collaborator",
+      techStack: ["Web Development", "Systems Design"],
+      summary: "A weekend side-project exploring digital solutions, system design patterns, and collaborative development with friends.",
       innovations: [],
       subProjects: []
     }
@@ -95,10 +106,10 @@ export const portfolioData = {
   ],
   timeline: [
     {
-      role: "Full-Stack Engineer",
+      role: "Senior Developer",
       organization: "Archimydes Inc.",
       period: "2022 — Present",
-      description: "Operating at the intersection of frontend architecture and backend pipelines. Driving development for global clients using React, Next.js, and Django. Architecting critical infrastructure like the Holter MCT PDF Engine."
+      description: "Operating at the intersection of frontend architecture and backend pipelines. Driving development for global clients using React, Next.js, and Django. Architecting critical infrastructure like the Accurkardia Holter MCT PDF Engine."
     },
     {
       role: "Director of R&D / Lead Developer",
